@@ -184,7 +184,8 @@ body {
 .text-center {
   text-align: center;
 }
-.card-text {
+.card-text,
+.section-text {
   line-height: 1.7;
 }
 
@@ -344,4 +345,23 @@ body {
 }
 .card-title {
   margin-block-end: 8px;
+}
+/* About */
+.about {
+  padding-block-end: 0;
+}
+.about-banner {
+  margin-block-end: 50px;
+}
+.about .section-title {
+  margin-block-end: 20px;
+}
+.about .section-text-1 {
+  margin-block-end: 25px 15px;
+}
+.about .btn {
+  font-size: unset;
+  max-width: max-content;
+  margin-block-start: 30px;
+  padding-inline: 15px;
 }
