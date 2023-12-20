@@ -127,6 +127,60 @@ body {
 .container {
   padding-inline: 25px;
 }
+.section {
+  padding-block: var(--section-padding);
+}
+.section-subtitle {
+  color: var(--royal-blue-light);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  margin-block-end: 10px;
+}
+.h1,
+.h2,
+.h3 {
+  font-family: var(--ff-poppins);
+  line-height: 1.2;
+}
+.h1 {
+  color: var(--oxford-blue-1);
+  font-size: var(--fs-2);
+}
+.h2,
+.h3 {
+  color: var(--oxford-blue-2);
+}
+.h3 {
+  color: var(--oxford-blue-2);
+  font-size: var(--fs-5);
+}
+.h2 {
+  font-size: var(--fs-1);
+}
+.btn {
+  background-image: linear-gradient(
+    var(--deg, 90deg),
+    var(--carolina-blue) 0%,
+    var(--royal-blue-light) 100%
+  );
+  color: var(--white);
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-4);
+  transition: 0.3s;
+}
+.btn:is(:hover, :focus) {
+  --deg: -90deg;
+  scale: 1.02;
+}
+.w-100 {
+  width: 100%;
+}
 
 /* Header */
 .header-top,
@@ -143,7 +197,7 @@ body {
 }
 .header-bottom.active {
   position: fixed;
-  top: -81px;
+  top: -90px;
   background-color: var(--white);
   box-shadow: var(--shadow-2);
   animation: slideIn 0.5s var(--cubic-out) forwards;
@@ -212,3 +266,42 @@ body {
   font-weight: var(--fw-600);
   padding: 15px;
 }
+
+/* hero */
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-block-end: calc(var(--section-padding) / 2);
+}
+.hero-content {
+  margin-block-end: 50px;
+}
+.hero-title {
+  margin-block: 15px 30px;
+}
+.hero-text {
+  font-size: var(--fs-6);
+  line-height: 1.45;
+  margin-block-end: 30px;
+}
+.hero-form {
+  background-color: var(--white);
+  max-width: 95%;
+  padding: 15px;
+  border-radius: var(--radius-4);
+  box-shadow: var(--shadow-3);
+}
+.hero-form .email-field {
+  background-color: var(--cultured);
+  color: var(--black);
+  min-height: 70px;
+  padding-inline: 15px;
+  border-radius: var(--radius-4);
+  margin-block-end: 15px;
+}
+.hero-form .btn {
+  width: 100%;
+}
+
+/* service */
