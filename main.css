@@ -318,7 +318,8 @@ body {
   padding-block-end: 0;
 }
 .service .section-title {
-  margin-block-end: 50px;
+  margin-block-end: 40px;
+  font-size: 38px;
 }
 .service-list {
   display: grid;
