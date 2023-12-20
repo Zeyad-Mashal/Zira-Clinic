@@ -181,6 +181,12 @@ body {
 .w-100 {
   width: 100%;
 }
+.text-center {
+  text-align: center;
+}
+.card-text {
+  line-height: 1.7;
+}
 
 /* Header */
 .header-top,
@@ -305,3 +311,36 @@ body {
 }
 
 /* service */
+.service-banner {
+  display: none;
+}
+.service {
+  padding-block-end: 0;
+}
+.service .section-title {
+  margin-block-end: 50px;
+}
+.service-list {
+  display: grid;
+  gap: 15px;
+}
+.service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  min-height: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-4);
+  padding: 25px;
+  transition: 0.3s;
+}
+.service-card:hover {
+  background-color: #eee;
+}
+.card-icon {
+  width: 50px;
+  flex-shrink: 0;
+}
+.card-title {
+  margin-block-end: 8px;
+}
