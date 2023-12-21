@@ -271,7 +271,7 @@ body {
 }
 .navbar.active {
   visibility: visible;
-  max-height: 245px;
+  max-height: 350px;
   transition-duration: 0.5s;
 }
 .navbar-list > li:not(:last-child) {
@@ -546,10 +546,10 @@ option {
 }
 /* rate */
 .rate .container {
-  padding: 0;
+  padding: 10px 0;
 }
 .rate .has-scrollbar {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 .rate .has-scrollbar .doctor-card {
   width: 100%;
