@@ -497,7 +497,7 @@ body {
 .reservation-card {
   box-shadow: var(--shadow-4);
   padding: 20px;
-  height: 620px;
+  height: 720px;
   width: 100%;
 }
 .contact .reservation-content {
