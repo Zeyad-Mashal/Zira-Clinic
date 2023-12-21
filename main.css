@@ -188,6 +188,16 @@ body {
 .section-text {
   line-height: 1.7;
 }
+.img-holder {
+  aspect-ratio: var(--width) / var(--height);
+  background-color: var(--light-gray);
+  background-position: center;
+}
+.image-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Header */
 .header-top,
@@ -364,4 +374,58 @@ body {
   max-width: max-content;
   margin-block-start: 30px;
   padding-inline: 15px;
+}
+/* Doctor */
+.doctor .section-title {
+  margin-block-end: 50px;
+}
+.doctor-card .card-banner {
+  border-radius: var(--radius-4);
+  overflow: hidden;
+  margin-block-end: 15px;
+}
+.doctor-card {
+  padding: 25px;
+  border: 1px solid var(--light-gray);
+  border-radius: var(--radius-4);
+  text-align: center;
+  min-height: 100%;
+}
+.doctor-card .card-title {
+  font-size: var(--fs-5);
+  transition: var(--transition);
+}
+.doctor-card:is(:hover, :focus-within) .card-title {
+  color: var(--royal-blue-light);
+}
+.doctor-card .card-subtitle {
+  color: var(--royal-blue-light);
+  margin-block: 10px 15px;
+}
+.has-scrollbar {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  margin-inline: 15px;
+  padding-block-end: 40px;
+  margin-block-end: -20px;
+  scroll-snap-type: inline mandatory;
+}
+.scrollbar-item {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+.has-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+.has-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--light-gray);
+  border-radius: var(--radius-4);
+}
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--royal-blue-light);
+  border-radius: var(--radius-4);
+}
+.has-scrollbar::-webkit-scrollbar-button {
+  width: calc(20% - 30px);
 }
