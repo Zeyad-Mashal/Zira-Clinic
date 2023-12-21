@@ -497,7 +497,7 @@ body {
 .reservation-card {
   box-shadow: var(--shadow-4);
   padding: 20px;
-  height: 750px;
+  height: auto;
   width: 100%;
 }
 .contact .reservation-content {
@@ -546,10 +546,10 @@ option {
 }
 /* rate */
 .rate .container {
-  padding: 0px;
+  padding: 0;
 }
 .rate .has-scrollbar {
-  padding: 0px;
+  padding-top: 5px;
 }
 .rate .has-scrollbar .doctor-card {
   width: 100%;
