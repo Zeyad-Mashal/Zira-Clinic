@@ -544,3 +544,17 @@ option {
   font-size: 18px;
   padding: 10px;
 }
+/* rate */
+.rate .container {
+  padding: 10px;
+  font-size: 20px;
+}
+.rate .has-scrollbar {
+  padding: 10px;
+}
+.rate .has-scrollbar .doctor-card {
+  width: 100%;
+  font-size: 20px;
+  height: 100%;
+  padding: 5px;
+}
