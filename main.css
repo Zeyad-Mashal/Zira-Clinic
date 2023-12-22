@@ -672,6 +672,12 @@ option {
 .whatapp i {
   font-size: 24px;
 }
+.reservation-bottom {
+  width: 100%;
+}
+.select-div {
+  margin-bottom: 20px;
+}
 /* Media Queries */
 
 @media (min-width: 575px) {
@@ -688,6 +694,9 @@ option {
   }
   .footer-top .container {
     grid-template-columns: 1fr 1fr;
+  }
+  .reservation-bottom {
+    width: 100%;
   }
 }
 
