@@ -557,3 +557,119 @@ option {
   height: 100%;
   padding: 5px;
 }
+/* Footer */
+.footer-top {
+  background-color: var(--oxford-blue-2);
+  color: var(--light-steel-blue);
+}
+.footer-top .container {
+  display: grid;
+  gap: 30px;
+}
+.footer-brand .logo {
+  color: var(--white);
+}
+.footer-text {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.schedule-icon,
+.footer-item .item-icon {
+  background-image: var(--gradient);
+  color: var(--white);
+  font-size: 18px;
+  padding: 11px;
+  border-radius: 50%;
+}
+.schedule .span,
+.footer-item .item-text {
+  line-height: 1.6;
+}
+.footer-list-title {
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+  margin-block-end: 10px;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 10px;
+  transition: var(--transition);
+}
+.footer-link i {
+  color: var(--royal-blue-light);
+}
+.footer-link:is(:hover, :focus) {
+  color: var(--white);
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-item:not(:first-child) {
+  margin-block-start: 20px;
+}
+.footer-item address a {
+  border-bottom: 1px solid var(--white);
+}
+.footer-item address:is(:hover, :focus) a {
+  color: var(--white);
+}
+.footer-item a:is(:hover, :focus) {
+  color: var(--white);
+}
+.footer-item .call {
+  width: 100%;
+}
+.footer-bottom {
+  background-color: var(--oxford-blue-3);
+  padding-block: 50px;
+  text-align: center;
+}
+.copyright {
+  color: var(--white);
+  line-height: 1.6;
+  margin-block-end: 25px;
+}
+.footer .social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .social-link {
+  width: 100%;
+  height: 100%;
+  padding: 11px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  color: var(--white);
+  font-size: 18px;
+  border-radius: 50%;
+}
+.footer .social-link:is(:hover, :focus) {
+  background-image: var(--gradient);
+}
+.whatapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(50, 50, 50, 0.3);
+  font-size: 22px;
+  padding: 14px;
+  border-radius: 50%;
+  color: #25d366;
+  transition: var(--transition);
+}
+.whatapp i {
+  font-size: 24px;
+}
+/* Media Queries */
