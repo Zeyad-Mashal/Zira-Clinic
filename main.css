@@ -441,7 +441,7 @@ body {
 }
 /* CTA */
 .cta {
-  background-color: #a19500;
+  background-color: #999;
 }
 .cta-banner {
   margin-block-end: 50px;
@@ -503,6 +503,9 @@ body {
 }
 .blog-card .card-text {
   margin-top: 15px;
+}
+.blog .container .blog-list {
+  margin-top: 2rem;
 }
 /* Contact */
 .reservation-card {
