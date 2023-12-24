@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,45 +76,93 @@
 
       <div class="header-bottom" data-header>
         <div class="container">
-          <a href="#" class="logo">Zira</a>
+          <a href="#" class="logo">
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              height="90px"
+              width="100px"
+            />
+          </a>
+
+          <div class="mobile-lang">
+            <select>
+              <option value="en" data-i18n="en">ألانجليزية</option>
+              <option value="ar" data-i18n="ar" selected>ألعربية</option>
+            </select>
+          </div>
 
           <nav class="navbar container" data-navbar>
             <ul class="navbar-list">
               <li>
-                <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+                <a
+                  href="#home"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="home"
+                  >الرئيسية
+                </a>
               </li>
               <li>
-                <a href="#service" class="navbar-link" data-navbar-link
-                  >Service</a
+                <a
+                  href="#service"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="service"
+                  >خدماتنا</a
                 >
               </li>
               <li>
-                <a href="#about" class="navbar-link" data-navbar-link
-                  >About Us</a
+                <a
+                  href="#about"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="about"
+                  >من نحن ؟</a
                 >
               </li>
               <li>
-                <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
-              </li>
-              <li>
-                <a href="#reservation" class="navbar-link" data-navbar-link
-                  >Contact</a
+                <a
+                  href="#blog"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="blog"
+                  >مدونتا</a
                 >
               </li>
               <li>
-                <a href="#gallary" class="navbar-link" data-navbar-link
-                  >Gallary</a
+                <a
+                  href="#reservation"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="contact"
+                  >اتصل بنا</a
                 >
               </li>
               <li>
-                <a href="#rates" class="navbar-link" data-navbar-link
-                  >Our Rates</a
+                <a
+                  href="#gallary"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="gallary"
+                  >معرض الصور</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#rates"
+                  class="navbar-link"
+                  data-navbar-link
+                  data-i18n="rates"
+                  >اراء العملاء</a
                 >
               </li>
             </ul>
           </nav>
 
-          <a href="#reservation" class="btn">Book a Reservation</a>
+          <a href="#reservation" class="btn" data-i18n="reservationBtn"
+            >احجز معانا الان</a
+          >
 
           <button
             class="nav-toggle-btn"
@@ -141,13 +189,17 @@
         >
           <div class="container">
             <div class="hero-content">
-              <p class="section-subtitle">Welcome To Zira Clinic</p>
-              <h1 class="h1 hero-title">We Are Best Dental Service</h1>
-              <p class="hero-text">
-                Discover Zira Clinic, where expert care meets warmth. We're
-                dedicated to crafting confident smiles through advanced
-                dentistry. Your journey to a radiant smile starts here, blending
-                technology with compassion.
+              <p class="section-subtitle" data-i18n="heroSubtitle">
+                مرحبا بكم في عيادة زيرا
+              </p>
+              <h1 class="h1 hero-title" data-i18n="heroTitle">
+                نحن أفضل خدمة طب الأسنان
+              </h1>
+              <p class="hero-text" data-i18n="heroText">
+                اكتشف عيادة زيرا، حيث تلتقي رعاية الخبراء بالدفء. كان مكرسة
+                لصياغة ابتسامات واثقة من خلال الخدمات المتقدمة في طب الأسنان.
+                رحلتك إلى ابتسامة مشرقة تبدأ هنا، بمزج التكنولوجيا مع الخبرة و
+                العلم.
               </p>
 
               <form class="hero-form">
@@ -159,7 +211,9 @@
                   required
                   class="email-field"
                 />
-                <button type="submit" class="btn">Get Call back</button>
+                <button type="submit" class="btn" data-i18n="heroCallBtn">
+                  ارسل رسالة للتواصل معنا
+                </button>
               </form>
             </div>
 
@@ -179,8 +233,12 @@
 
         <section class="section service" id="service" aria-label="service">
           <div class="container">
-            <p class="section-subtitle text-center">Our Services</p>
-            <h2 class="h2 section-title text-center">What We Provide</h2>
+            <p class="section-subtitle text-center" data-i18n="serviceSubtitle">
+              خدماتنا
+            </p>
+            <h2 class="h2 section-title text-center" data-i18n="serviceTitle">
+              ما هي خدماتنا ؟
+            </h2>
 
             <ul class="service-list">
               <li>
@@ -197,10 +255,13 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Root Canal</h3>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Expedita corporis ex laborum atque tenetur magnam?
+                    <h3 class="h3 card-title" data-i18n="service1">
+                      Dental implants
+                    </h3>
+                    <p class="card-text" data-i18n="service1Text">
+                      زراعة الأسنان هي تقنية حديثة تستخدم لتثبيت أسنان اصطناعية
+                      بشكل دائم. يتم زرع جذور صناعية في الفك لحلاً فعّالاً
+                      لفقدان الأسنان، مما يضمن استعادة الوظيفة والمظهر الطبيعي.
                     </p>
                   </div>
                 </div>
@@ -219,8 +280,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Alignment Teeth</h3>
-                    <p class="card-text">
+                    <h3 class="h3 card-title" data-i18n="service2">
+                      Alignment Teeth
+                    </h3>
+                    <p class="card-text" data-i18n="service2Text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Expedita corporis ex laborum atque tenetur magnam?
                     </p>
@@ -241,8 +304,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Cosmetic Teeth</h3>
-                    <p class="card-text">
+                    <h3 class="h3 card-title" data-i18n="service3">
+                      Cosmetic Teeth
+                    </h3>
+                    <p class="card-text" data-i18n="service3Text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Expedita corporis ex laborum atque tenetur magnam?
                     </p>
@@ -276,8 +341,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Oral Hygiene</h3>
-                    <p class="card-text">
+                    <h3 class="h3 card-title" data-i18n="service4">
+                      Oral Hygiene
+                    </h3>
+                    <p class="card-text" data-i18n="service4Text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Expedita corporis ex laborum atque tenetur magnam?
                     </p>
@@ -298,8 +365,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Live Advisory</h3>
-                    <p class="card-text">
+                    <h3 class="h3 card-title" data-i18n="service5">
+                      Live Advisory
+                    </h3>
+                    <p class="card-text" data-i18n="service5Text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Expedita corporis ex laborum atque tenetur magnam?
                     </p>
@@ -320,8 +389,10 @@
                   </div>
 
                   <div>
-                    <h3 class="h3 card-title">Cavity Inspection</h3>
-                    <p class="card-text">
+                    <h3 class="h3 card-title" data-i18n="service6">
+                      Cavity Inspection
+                    </h3>
+                    <p class="card-text" data-i18n="service6Text">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Expedita corporis ex laborum atque tenetur magnam?
                     </p>
@@ -348,20 +419,20 @@
             </figure>
 
             <div class="about-content">
-              <p class="section-subtitle">About Us</p>
-              <h2 class="h2 section-title">We Care For Your Dental Health</h2>
-              <p class="section-text section-text-1">
-                We take pride in providing high-quality medical care and
-                specialized dental services. Our highly experienced team
-                includes specialized doctors who always strive to achieve the
-                best results and ensure the comfort and confidence of our
-                patients. Our services include teeth whitening, beauty
-                treatments, dental implants, orthodontic treatments, dental
-                implants and many other services that meet your health and
-                aesthetic needs. We are keen to use the latest technologies and
-                equipment to provide optimal care.
+              <p class="section-subtitle" data-i18n="aboutSubtitle">من نحن ؟</p>
+              <h2 class="h2 section-title" data-i18n="aboutTitle">
+                نحن نهتم بصحة أسنانك
+              </h2>
+              <p class="section-text section-text-1" data-i18n="aboutText">
+                نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب الأسنان
+                المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون
+                دائمًا لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا
+                تبييض الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم
+                الأسنان، زراعة الأسنان والعديد من الخدمات الأخرى التي تلبي
+                احتياجاتك الصحية والجمالية. نحرص على استخدام أحدث التقنيات
+                والمعدات لتقديم الرعاية المثالية
               </p>
-              <p id="contact" class="btn">Contact Us Now</p>
+              <p id="contact" class="btn" data-i18n="aboutBtn">اتصل بنا الآن</p>
             </div>
           </div>
         </section>
@@ -369,8 +440,12 @@
         <!-- Doctor -->
         <section class="section doctor" id="doctor" aria-label="doctor">
           <div class="container">
-            <p class="section-subtitle text-center">Our Doctors</p>
-            <h2 class="h2 section-title text-center">Best Expert Detist</h2>
+            <p class="section-subtitle text-center" data-i18n="doctorSubtitle">
+              Our Doctors
+            </p>
+            <h2 class="h2 section-title text-center" data-i18n="doctorTitle">
+              أفضل اطباء خبراء في طب الاسنان
+            </h2>
             <ul class="has-scrollbar">
               <li class="scrollbar-item">
                 <div class="doctor-card">
@@ -389,9 +464,13 @@
                   </div>
 
                   <h3 class="h3">
-                    <p class="card-title">Name Here</p>
+                    <p class="card-title" data-i18n="doctorName1">
+                      الاسم الاول
+                    </p>
                   </h3>
-                  <p class="card-subtitle">Dentist</p>
+                  <p class="card-subtitle" data-i18n="doctorSubname1">
+                    طبيب اسنان
+                  </p>
                 </div>
               </li>
               <li class="scrollbar-item">
@@ -411,9 +490,13 @@
                   </div>
 
                   <h3 class="h3">
-                    <p class="card-title">Name Here</p>
+                    <p class="card-title" data-i18n="doctorName2">
+                      الاسم الثاني
+                    </p>
                   </h3>
-                  <p class="card-subtitle">Dentist</p>
+                  <p class="card-subtitle" data-i18n="doctorSubname2">
+                    طبيب اسنان
+                  </p>
                 </div>
               </li>
               <li class="scrollbar-item">
@@ -433,9 +516,13 @@
                   </div>
 
                   <h3 class="h3">
-                    <p class="card-title">Name Here</p>
+                    <p class="card-title" data-i18n="doctorName3">
+                      الاسم الثالث
+                    </p>
                   </h3>
-                  <p class="card-subtitle">Dentist</p>
+                  <p class="card-subtitle" data-i18n="doctorSubname3">
+                    طبيب اسنان
+                  </p>
                 </div>
               </li>
               <li class="scrollbar-item">
@@ -455,9 +542,13 @@
                   </div>
 
                   <h3 class="h3">
-                    <p class="card-title">Name Here</p>
+                    <p class="card-title" data-i18n="doctorName4">
+                      الاسم الرابع
+                    </p>
                   </h3>
-                  <p class="card-subtitle">Dentist</p>
+                  <p class="card-subtitle" data-i18n="doctorSubname4">
+                    طبيب اسنان
+                  </p>
                 </div>
               </li>
             </ul>
@@ -478,11 +569,15 @@
               />
             </figure>
             <div class="cta-content">
-              <p class="section-subtitle">Dentail Reservation</p>
-              <h2 class="h2 section-title">
-                We Are Open And Welcoming Patients
+              <p class="section-subtitle" data-i18n="ctaSubtitle">
+                أحجز معنا الان
+              </p>
+              <h2 class="h2 section-title" data-i18n="ctaTitle">
+                نرحب دائما بكم و دائما في عيادة زيرا للأسنان
               </h2>
-              <a href="#reservation" class="btn"> Book Reservation </a>
+              <a href="#reservation" class="btn" data-i18n="ctaBtn">
+                Book A Reservation
+              </a>
             </div>
           </div>
         </section>
@@ -490,8 +585,12 @@
         <!-- Blog -->
         <section class="section blog" id="blog" aria-label="blog">
           <div class="container">
-            <p class="section-subtittle text-center">Out Blog</p>
-            <h2 class="h2 section-subtittle text-center">Latest Blog & News</h2>
+            <p class="section-subtittle text-center" data-i18n="blogSubtitle">
+              اسألتكم المشهورة
+            </p>
+            <h2 class="h2 section-subtittle text-center" data-i18n="blogTitle">
+              ما هي أشهر الاسالة ؟
+            </h2>
 
             <ul class="blog-list">
               <li>
@@ -601,55 +700,74 @@
         <section class="section contact" id="reservation" aria-label="contact">
           <div class="container">
             <div class="reservation-card">
-              <p class="section-subtittle text-center">Contact us</p>
-              <h2 class="h2 section-subtittle text-center">Make Reservation</h2>
+              <p
+                class="section-subtittle text-center"
+                data-i18n="contactSubtitle"
+              >
+                تواصل معنا هنا"
+              </p>
+              <h2
+                class="h2 section-subtittle text-center"
+                data-i18n="contactTitle"
+              >
+                أحجز معنا الان
+              </h2>
               <div class="reservation-content">
                 <form>
                   <div>
-                    <label for="firstname"> First Name: </label>
+                    <label for="firstname" data-i18n="fristName">
+                      الاسم الاول
+                    </label>
                     <input type="text" id="firstname" required />
                   </div>
                   <div>
-                    <label for="lastname"> Last Name: </label>
+                    <label for="lastname" data-i18n="lastName">
+                      اسم العائلة
+                    </label>
                     <input type="text" id="lastname" required />
                   </div>
                   <div>
-                    <label for="phone"> Phone Number: </label>
+                    <label for="phone" data-i18n="phoneNumber">
+                      رقم الهاتف
+                    </label>
                     <input type="number" id="phone" required />
                   </div>
                   <div>
-                    <label for="date"> Choice Your Reservation Date: </label>
+                    <label for="date" data-i18n="date">
+                      اختر تاريخ الحجز
+                    </label>
                     <input type="date" id="date" required value="2024-01-01" />
                   </div>
                 </form>
                 <div class="reservation-bottom">
                   <div class="select-div">
-                    <p class="select-title">Select A Service:</p>
+                    <p class="select-title" data-i18n="servicesSelector">
+                      اختر العرض او الخدمة
+                    </p>
                     <select name="services" class="options">
-                      <option value="Select Your service">
-                        Dental implants starting from 424 ASR
+                      <option value="Select Your service" data-i18n="option1">
+                        تركيبات الأسنان ابتداء من 424 ريال للسن الواحد .
                       </option>
-                      <option value="">
-                        Immediate dental implants<br />starting from 2024 ASR
+                      <option value="" data-i18n="option2">
+                        زراعة فورية مع استشاري زراعة الأسنان ابتداء من 2024
+                        ريال.
                       </option>
-                      <option value="">
-                        Orthodontics for the jaws: 924 ASR for the first payment
+                      <option value="" data-i18n="option3">
+                        تقويم الأسنان للفكين 924 ريال للدفعة الأولى .
                       </option>
-                      <option value="">
-                        Laser teeth whitening in one session: 424 ASR
+                      <option value="" data-i18n="option4">
+                        تبييض الأسنان بالليزر بجلسة واحدة *424 ريال*
                       </option>
-                      <option value="">
-                        Teeth cleaning, tartar removal and teeth polishing 124
-                        ASR
+                      <option value="" data-i18n="option5">
+                        تنظيف الأسنان وإزالة الجير وتلميع الأسنان 124 ريال
                       </option>
-                      <option value="">
-                        Cosmetic fillings of the highest quality starting from
-                        124 ASR
+                      <option value="" data-i18n="option6">
+                        الحشوات التجميلية بأعلى جودة تبدأ من 124 ريال
                       </option>
                     </select>
                   </div>
                   <div>
-                    <p>Leave a Massege:</p>
+                    <p data-i18n="textarea">Leave a Massege:</p>
                     <textarea></textarea>
                   </div>
                 </div>
@@ -661,18 +779,30 @@
         <!-- Gallery -->
         <section class="section gallary" id="gallary">
           <div class="container">
-            <p class="section-subtittle text-center">Some Of Our Smiles</p>
-            <h2 class="h2 section-subtittle text-center">Our Gallary</h2>
+            <p
+              class="section-subtittle text-center"
+              data-i18n="gallarySubtitle"
+            >
+              بعض من ابتسامتنا
+            </p>
+            <h2
+              class="h2 section-subtittle text-center"
+              data-i18n="gallaryTitle"
+            >
+              معرض الابتسامات
+            </h2>
           </div>
         </section>
 
         <!-- Rates -->
         <section class="section rate" id="rates" aria-label="rate">
           <div class="container">
-            <p class="section-subtittle text-center">
-              What our Patients say about us ?
+            <p class="section-subtittle text-center" data-i18n="rateSubtitle">
+              ماذا يقول العملاء عن عنا ؟"
             </p>
-            <h2 class="h2 section-subtittle text-center">Our Rates</h2>
+            <h2 class="h2 section-subtittle text-center" data-i18n="rateTitle">
+              أراء العملاء
+            </h2>
             <ul class="has-scrollbar">
               <li class="scrollbar-item">
                 <div class="doctor-card">
@@ -821,94 +951,105 @@
       <div class="footer-top section">
         <div class="container">
           <div class="footer-brand">
-            <p class="logo">Zira</p>
-            <p class="footer-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-              voluptates nihil vel doloremque alias soluta! Ipsa id nostrum
-              accusamus dolorum.
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              width="100px"
+              height="10px"
+            />
+            <p class="footer-text" data-i18n="footerText">
+              نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب الأسنان
+              المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون دائمًا
+              لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا تبييض
+              الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم الأسنان،
+              زراعة الأسنان والعديد من الخدمات الأخرى التي تلبي احتياجاتك الصحية
+              والجمالية. نحرص على استخدام أحدث التقنيات والمعدات لتقديم الرعاية
+              المثالية
             </p>
             <div class="schedule">
               <div class="schedule-icon">
                 <i class="fa-regular fa-calendar-days"></i>
               </div>
-              <span class="span">
-                From Saturday to Thursday: <br />
-                2:00 to 10:00 <br />
-                Friday: 4:00 to 10:00
+              <span class="span" data-i18n="footerTime">
+                من السبت الي الخميس اساعة 2 الي 10 مساءا و الجمعة من 4 الي 10
+                مساءا"
               </span>
             </div>
           </div>
 
           <ul class="footer-list">
             <li>
-              <p class="footer-list-title">Other Links</p>
+              <p class="footer-list-title" data-i18n="otherlinks">روابط اخري</p>
             </li>
             <li>
               <a href="#home" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Home</span>
+                <span class="span" data-i18n="home">Home</span>
               </a>
             </li>
             <li>
               <a href="#about" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">About Us</span>
+                <span class="span" data-i18n="about">About Us</span>
               </a>
             </li>
             <li>
               <a href="#service" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Services</span>
+                <span class="span" data-i18n="service">Services</span>
               </a>
             </li>
             <li>
               <a href="#blog" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Blog</span>
+                <span class="span" data-i18n="blog">Blog</span>
               </a>
             </li>
             <li>
               <a href="#reservation" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Contact</span>
+                <span class="span" data-i18n="contact">Contact</span>
               </a>
             </li>
             <li>
               <a href="#gallary" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Gallary</span>
+                <span class="span" data-i18n="gallary">Gallary</span>
               </a>
             </li>
             <li>
               <a href="#rates" class="footer-link">
                 <!-- icon -->
                 <i class="fa-solid fa-plus"></i>
-                <span class="span">Out Rates</span>
+                <span class="span" data-i18n="rates">Out Rates</span>
               </a>
             </li>
           </ul>
 
           <ul class="footer-list">
             <li>
-              <p class="footer-list-title">Contact Us</p>
+              <p class="footer-list-title" data-i18n="contact">Contact Us</p>
             </li>
 
             <li class="footer-item">
               <div class="item-icon">
-                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
               </div>
               <address class="item-text">
                 <a
                   href="https://maps.app.goo.gl/dW1CQjVDxBLXheSEA
                 "
                   target="_blank"
-                  >Our Location here</a
+                  data-i18n="location"
+                  >اضغط للذهاب الي موقعنا</a
                 >
               </address>
             </li>
@@ -917,7 +1058,7 @@
               <div class="item-icon">
                 <i class="fa-solid fa-phone"></i>
               </div>
-              <p class="call">Call Now:</p>
+              <p class="call" data-i18n="call">ارقامنا هنا</p>
               <a href="tel:+966590333666">0590333666</a>
               |
               <a href="tel:+966593500599">0593500599</a>
@@ -928,9 +1069,9 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p class="copyright">
+          <p class="copyright" data-i18n="copyright">
             &copy; 2023 All Rights Reserved By | Zira Clinic <br />
-            <a href="tel:+201205222331">| Momentum</a>
+            <a href="tel:+201205222331" data-i18n="me">| Momentum</a>
           </p>
 
           <ul class="social-list">
@@ -940,9 +1081,11 @@
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
+              <div class="insta">
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
             </li>
             <li>
               <a href="#" class="social-link">
