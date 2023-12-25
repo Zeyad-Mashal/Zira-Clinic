@@ -1,12 +1,13 @@
 :root {
   /* Colors */
-
+  /* c8b17e */
+  /* cec5bb */
   --light-steel-blue: hsl(218, 33%, 77%);
-  --royal-blue-light: #e8c601;
-  --flickr-blue_30: hsla(68, 100%, 46%, 0.3);
-  --carolina-blue: #e6c300;
+  --royal-blue-light: #ae996d;
+  --flickr-blue_30: #eee;
+  --carolina-blue: rgb(204, 187, 169);
   /* --carolina-blue: hsl(201, 92%, 47%); */
-  --oxford-blue-1: #ccad00;
+  --oxford-blue-1: #b08d45;
   /* hsl(218, 70%, 18%) */
   --oxford-blue-2: hsl(217, 100%, 12%);
   --oxford-blue-3: hsl(218, 71%, 11%);
@@ -133,7 +134,7 @@ body {
   padding-block: var(--section-padding);
 }
 .section-subtitle {
-  color: var(--royal-blue-light);
+  color: var(--oxford-blue-1);
   font-family: var(--ff-poppins);
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
@@ -162,11 +163,7 @@ body {
   font-size: var(--fs-1);
 }
 .btn {
-  background-image: linear-gradient(
-    var(--deg, 90deg),
-    var(--carolina-blue) 0%,
-    var(--royal-blue-light) 100%
-  );
+  background-color: var(--oxford-blue-1);
   color: var(--white);
   font-size: var(--fs-7);
   text-transform: uppercase;
@@ -441,13 +438,14 @@ body {
 }
 /* CTA */
 .cta {
-  background-color: #999;
+  background-color: var(--royal-blue-light);
 }
 .cta-banner {
   margin-block-end: 50px;
 }
 .cta .section-subtitle {
   text-transform: capitalize;
+  color: var(--white);
 }
 .cta .section-title {
   color: var(--white);
@@ -457,8 +455,13 @@ body {
 .cta .btn {
   max-width: max-content;
   background-color: var(--oxford-blue-1);
+  box-shadow: none;
 }
 /* Blog */
+.blog .container .text-center:first-child {
+  color: var(--oxford-blue-1);
+  font-size: var(--fs-5);
+}
 .blog .section-title {
   margin-block-end: 50px;
 }
@@ -508,8 +511,12 @@ body {
   margin-top: 2rem;
 }
 /* Contact */
+.contact .container .reservation-card .text-center:first-child {
+  color: var(--oxford-blue-1);
+  font-size: var(--fs-5);
+}
 .reservation-card {
-  box-shadow: var(--shadow-4);
+  box-shadow: var(--shadow-5);
   padding: 20px;
   height: auto;
   width: 100%;
@@ -560,6 +567,10 @@ option {
 }
 
 /* Gallary */
+.gallary .container .text-center:first-child {
+  color: var(--oxford-blue-1);
+  font-size: var(--fs-5);
+}
 .gallary-container {
   width: 100%;
   height: 100%;
@@ -577,6 +588,10 @@ option {
   margin-bottom: 2rem;
 }
 /* rate */
+.rate .container .text-center:first-child {
+  color: var(--oxford-blue-1);
+  font-size: var(--fs-6);
+}
 .rate .container {
   padding: 10px 0;
 }
