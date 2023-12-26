@@ -283,12 +283,17 @@ body {
   padding: 15px;
 }
 .mobile-lang select {
-  padding: 10px;
+  padding: 5px 8px;
   border-radius: 10px;
   font-size: 18px;
-  background-color: #eee;
-  color: #222;
+  background-color: var(--oxford-blue-1);
+  color: var(--flickr-blue_30);
   outline: none;
+  border: none;
+  cursor: pointer;
+}
+.mobile-lang option[value="1"] {
+  background-color: red !important;
 }
 
 /* hero */
@@ -303,6 +308,7 @@ body {
 }
 .hero-title {
   margin-block: 15px 30px;
+  font-size: var(--fs-3);
 }
 .hero-text {
   font-size: var(--fs-6);
@@ -564,6 +570,16 @@ option {
   background-color: #eee;
   font-size: 18px;
   padding: 10px;
+}
+.reservation-content .reservationBtn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservationBtn button {
+  padding: 2rem 5rem;
+  font-size: var(--fs-4);
 }
 
 /* Gallary */

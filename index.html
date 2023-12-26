@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="lightbox.css" />
     <link rel="shortcut icon" href="./favicon" type="image/svg+xml" />
+    <link rel="icon" href="./images/logo.png" />
     <!-- Google Fonnts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +32,7 @@
         <div class="container">
           <ul class="contact-list">
             <li class="contact-item">
-              <i class="fa-regular fa-envelope"></i>
+              <i class="fa-regular fa-envelope" style="color: white"></i>
 
               <a href="mailto:info@example.com" class="contact-link"
                 >info@example.com</a
@@ -39,11 +40,9 @@
             </li>
 
             <li class="contact-item">
-              <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone" style="color: white"></i>
 
-              <a href="tel:+966590333666" class="contact-link"
-                >+966 0590333666</a
-              >
+              <a href="tel:+966590333666" class="contact-link">0590333666</a>
             </li>
           </ul>
 
@@ -81,7 +80,7 @@
             <img
               src="./images/logo.png"
               alt="logo"
-              height="90px"
+              height="100px"
               width="100px"
             />
           </a>
@@ -220,7 +219,7 @@
 
             <figure>
               <img
-                src="./images/hero-banner.png"
+                src="./images/hero.png"
                 width="587"
                 height="939"
                 alt="Home Image"
@@ -775,12 +774,16 @@
                     <textarea></textarea>
                   </div>
                 </div>
+
+                <div class="text-center reservationBtn">
+                  <button class="btn" data-i18n="sendBtn">ارسال</button>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Gallery -->
+        <!-- Gallery 1 -->
         <section class="section gallary" id="gallary">
           <div class="container">
             <p
@@ -794,6 +797,83 @@
               data-i18n="gallaryTitle"
             >
               معرض الابتسامات
+            </h2>
+
+            <div class="gallary-container">
+              <a
+                href="./images/image1.jpeg"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image1.jpeg" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image2.jpeg"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image2.jpeg" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image3.jpeg"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image3.jpeg" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image9.png"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image9.png" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image12.png"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image12.png" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image13.png"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image13.png" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image14.png"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image14.png" alt="gallary image1" />
+              </a>
+              <a
+                href="./images/image7.jpeg"
+                data-lightbox="models"
+                data-title="Caption1"
+              >
+                <img src="./images/image7.jpeg" alt="gallary image1" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery 2 -->
+        <section class="section gallary" id="gallary">
+          <div class="container">
+            <p
+              class="section-subtittle text-center"
+              data-i18n="gallary2Subtitle"
+            >
+              عيادة زيرا للاسنان
+            </p>
+            <h2
+              class="h2 section-subtittle text-center"
+              data-i18n="gallary2Title"
+            >
+              جولة في العيادة
             </h2>
 
             <div class="gallary-container">

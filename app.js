@@ -44,12 +44,12 @@ window.addEventListener("scroll", function () {
 const translations = {
     en: {
         home: "Home",
-        service: "Our Services",
-        about: "About Us",
+        service: "Services",
+        about: "About",
         blog: "Questions",
         contact: "Contact",
         gallary: "Gallary",
-        rates: "Our Rates",
+        rates: "Rates",
         reservationBtn: "Book A Reservation",
         en: "English",
         ar: "Arabic",
@@ -112,6 +112,8 @@ const translations = {
         textarea: "Leave A Message and we will Contact with you:",
         gallarySubtitle: "Some Of Our Smiles",
         gallaryTitle: "Our Gallary",
+        gallary2Subtitle:"Zira Clinic Here",
+        gallary2Title: "Clinic tour",
         rateSubtitle: "What our Patients say about us ?",
         rateTitle: "Our Rates",
         footerText: "We take pride in providing high-quality medical care and specialized dental services. Our highly experienced team includes specialized doctors who always strive to achieve the best results and ensure the comfort and confidence of our patients. Our services include teeth whitening, beauty treatments, dental implants, orthodontic treatments, dental implants and many other services that meet your health and aesthetic needs. We are keen to use the latest technologies and equipment to provide optimal care.",
@@ -120,6 +122,7 @@ const translations = {
         location: "Our Location Here",
         call: "Our Numbers",
         copyright: "2023 All Rights Reserved By | Zira Clinic | Momentum",
+        sendBtn: "Send",
     },
     ar: {
         home: "الرئيسية",
@@ -192,6 +195,8 @@ const translations = {
         textarea: "اترك لنا رسالتك و سوف يتم التواصل معاك",
         gallarySubtitle: "بعض من ابتسامتنا",
         gallaryTitle: "معرض الابتسامات",
+        gallary2Subtitle:"عيادة زيرا للاسنان",
+        gallary2Title: "جولة في العيادة",
         rateSubtitle: "ماذا يقول العملاء عنا ؟",
         rateTitle: "أراء العملاء",
         footerText: "نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب الأسنان المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون دائمًا لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا تبييض الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم الأسنان، زراعة الأسنان والعديد من الخدمات الأخرى التي تلبي احتياجاتك الصحية والجمالية. نحرص على استخدام أحدث التقنيات والمعدات لتقديم الرعاية المثالية",
@@ -199,7 +204,8 @@ const translations = {
         otherlinks: "روابط اخرى",
         location: "اضغط للذهاب الي موقعنا",
         call: "أرقامنا هنا",
-        copyright: "كل الحقوق محفوظة | عيادة زيرا | شركة مومنتيوم"
+        copyright: "كل الحقوق محفوظة | عيادة زيرا | شركة مومنتيوم",
+        sendBtn: "ارسال",
     }
 }
 
