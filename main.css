@@ -627,13 +627,17 @@ option {
 }
 .schedule-icon,
 .footer-item .item-icon {
-  background-image: var(--gradient);
+  background-color: var(--oxford-blue-1);
   color: var(--white);
   font-size: 18px;
-  padding: 11px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  width: auto;
-  height: 40px;
+  padding: 20px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .schedule .span,
 .footer-item .item-text {
@@ -715,13 +719,19 @@ option {
   right: 20px;
   background-color: rgba(50, 50, 50, 0.3);
   font-size: 22px;
-  padding: 14px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   color: #25d366;
   transition: var(--transition);
 }
 .whatapp i {
-  font-size: 24px;
+  font-size: 35px;
 }
 .reservation-bottom {
   width: 100%;
