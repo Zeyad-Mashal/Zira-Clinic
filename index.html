@@ -87,10 +87,9 @@
           </a>
 
           <div class="mobile-lang">
-            <select>
-              <option value="en" data-i18n="en">الانجليزية</option>
-              <option value="ar" data-i18n="ar" selected>العربية</option>
-            </select>
+            <i class="fa-solid fa-earth-americas"></i>
+            <p id="optionAr" data-i18n="optionAr">العربية</p>
+            <p id="optionEn" data-i18n="optionEn">الانجليزية</p>
           </div>
 
           <nav class="navbar container" data-navbar>
@@ -194,13 +193,12 @@
                 مرحبا بكم في عيادة زيرا
               </p>
               <h1 class="h1 hero-title" data-i18n="heroTitle">
-                نحن أفضل خدمة طب الأسنان
+                بعيادة زيرا ابتسامك تعكس جمال وثقة
               </h1>
               <p class="hero-text" data-i18n="heroText">
-                اكتشف عيادة زيرا، حيث تلتقي رعاية الخبراء بالدفء. مكان مكرس
-                لصياغة ابتسامات واثقة من خلال الخدمات المتقدمة في طب الأسنان.
-                رحلتك إلى ابتسامة مشرقة تبدأ هنا، بمزج التكنولوجيا مع الخبرة و
-                العلم.
+                في عيادات زيرا، نقدم باهتمام فائق خدمات الأسنان التجميلية والعلاجية، حيث يشرف
+                على هذه الخدمات فريق من الخبراء المتميزين. نحن ملتزمون بتوفير رعاية شاملة ومتكاملة
+                ، مع التركيز على جودة الخدمة وراحة المريض، لضمان تحقيق أفضل نتائج صحية وجمالية.
               </p>
 
               <form class="hero-form">
@@ -716,6 +714,7 @@
                 أحجز معنا الان
               </h2>
               <div class="reservation-content">
+                <p class="erroMessage"></p>
                 <form>
                   <div>
                     <label for="firstname" data-i18n="fristName">
@@ -739,49 +738,36 @@
                     <label for="date" data-i18n="date">
                       اختر تاريخ الحجز
                     </label>
-                    <input type="date" id="date" required value="2024-01-01" />
+                    <input type="date" id="date" required />
                   </div>
-                </form>
-                <div class="reservation-bottom">
-                  <div class="select-div">
+                
+                <div class="selectBox">
                     <p class="select-title" data-i18n="servicesSelector">
                       اختر العرض او الخدمة
                     </p>
-                    <select name="services" class="options">
-                      <option value="Select Your service" data-i18n="option1">
-                        تركيبات الأسنان ابتداء من 424 ريال للسن الواحد .
-                      </option>
-                      <option value="" data-i18n="option2">
-                        زراعة فورية مع استشاري زراعة الأسنان ابتداء من 2024
-                        ريال.
-                      </option>
-                      <option value="" data-i18n="option3">
-                        تقويم الأسنان للفكين 924 ريال للدفعة الأولى .
-                      </option>
-                      <option value="" data-i18n="option4">
-                        تبييض الأسنان بالليزر بجلسة واحدة *424 ريال*
-                      </option>
-                      <option value="" data-i18n="option5">
-                        تنظيف الأسنان وإزالة الجير وتلميع الأسنان 124 ريال
-                      </option>
-                      <option value="" data-i18n="option6">
-                        الحشوات التجميلية بأعلى جودة تبدأ من 124 ريال
-                      </option>
+                    <select name="services" class="options" id="select">
+                      <!-- get option tag from js -->
                     </select>
                   </div>
                   <div>
                     <p data-i18n="textarea">
                       اترك لنا رسالتك و سوف يتم التواصل معاك
                     </p>
-                    <textarea></textarea>
+                    <textarea id="textArea"></textarea>
                   </div>
+                </form>
+                <div class="text-center">
+                  <button class="btn" data-i18n="sendBtn" id="sendBtn">ارسال</button>
                 </div>
-
-                <div class="text-center reservationBtn">
-                  <button class="btn" data-i18n="sendBtn">ارسال</button>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div class="contactPopup d-none">
+            <div class="popupContent">
+             
+              </div>
           </div>
         </section>
 
@@ -802,62 +788,7 @@
             </h2>
 
             <div class="gallary-container">
-              <a
-                href="./images/image1.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image1.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image2.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image2.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image3.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image3.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image9.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image9.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image12.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image12.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image13.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image13.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image14.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image14.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image7.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image7.jpeg" alt="gallary image1" />
-              </a>
+              <!-- gallary came from js -->
             </div>
           </div>
         </section>
@@ -878,63 +809,8 @@
               جولة في العيادة
             </h2>
 
-            <div class="gallary-container">
-              <a
-                href="./images/image1.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image1.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image2.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image2.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image3.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image3.jpeg" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image9.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image9.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image12.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image12.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image13.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image13.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image14.png"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image14.png" alt="gallary image1" />
-              </a>
-              <a
-                href="./images/image7.jpeg"
-                data-lightbox="models"
-                data-title="Caption1"
-              >
-                <img src="./images/image7.jpeg" alt="gallary image1" />
-              </a>
+            <div class="gallary-container clinic-gallary">
+              <!-- gallary came from the js -->
             </div>
           </div>
         </section>
@@ -1245,6 +1121,7 @@
     <a href="https://wa.me/966590333666" class="whatapp" aria-label="whatsapp">
       <i class="fa-brands fa-whatsapp"></i>
     </a>
+    <script src="translation.js"></script>
     <script src="app.js"></script>
     <script src="lightbox-plus-jquery.js"></script>
   </body>
