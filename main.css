@@ -583,6 +583,9 @@ option {
   font-size: 18px;
   padding: 10px;
 }
+.textarea {
+  margin-top: 2rem;
+}
 .erroMessage {
   color: rgb(238, 32, 32);
   /* background-color: rgb(238, 32, 32); */

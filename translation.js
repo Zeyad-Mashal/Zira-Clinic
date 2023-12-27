@@ -77,6 +77,7 @@ const translations = {
         sendBtn: "Send",
         optionAr: "Arabic",
         optionEn: "English",
+        textarea: "Leave a message and we will contact with you:"
     },
     ar: {
         home: "الرئيسية",
@@ -155,5 +156,6 @@ const translations = {
         sendBtn: "ارسال",
         optionAr: "العربية",
         optionEn: "الانجليزية",
+        textarea: "اترك لنا رسالتك و سوف يتم التواصل معاك",
     }
 }
