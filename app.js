@@ -68,11 +68,17 @@ optionAr.addEventListener("click",() => {
 if(localStorage.getItem("localLang")) {
     if (localStorage.getItem("localLang") == "ar"){
         setlang("ar");
+        optionAr.classList.replace('d-flex', 'd-none');
+        optionEn.classList.replace('d-none', 'd-flex');
     } else {
         setlang("en");
+        optionAr.classList.replace('d-none', 'd-flex');
+        optionEn.classList.replace('d-flex', 'd-none');
     }
 } else {
     setlang("ar");
+    optionAr.classList.replace('d-flex', 'd-none');
+    optionEn.classList.replace('d-none', 'd-flex');
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -223,5 +229,49 @@ const displayClinicGallary = (allGallaryClinic) => {
     document.querySelector(".clinic-gallary").innerHTML = clinicBox;
 }
 
+// Doctor Gallary
+
+const getDoctorGallary = async () =>  {
+    const response = await fetch(`${URL}/doctor/getAllDoctors`);
+    const allDocotrs = await response.json();
+    const doctorsData = allDocotrs.allDoctor;
+    displayDocrotsData(doctorsData)
+}
+
+// display smile gallary
+const displayDocrotsData = (allDocotrs) => {
+    let doctorBox = '';
+    for (let i=0 ; i < allDocotrs.length ; i++) {
+        doctorBox += ` 
+        <li class="scrollbar-item">
+        <div class="doctor-card">
+          <div
+            class="card-banner img-holder"
+            style="--width: ; --height: "
+          >
+            <img
+              src="${allDocotrs[i].imgURL}"
+              width="460"
+              height="500"
+              loading="lazy"
+              alt="Doctor Image"
+              class="image-cover"
+            />
+          </div>
+
+          <h3 class="h3">
+            <p class="card-title" data-i18n="doctorName1">
+            ${(localStorage.getItem("localLang")) ? (localStorage.getItem("localLang") == "ar") ? `${allDocotrs[i].docName_ar}` : `${allDocotrs[i].docName_en}` : `${allDocotrs[i].docName_ar}` }
+            </p>
+          </h3>
+          <p class="card-subtitle" data-i18n="doctorSubname1">
+          ${(localStorage.getItem("localLang")) ? (localStorage.getItem("localLang") == "ar") ? `${allDocotrs[i].docDesc_ar}` : `${allDocotrs[i].docDesc_en}` : `${allDocotrs[i].docDesc_ar}` }          </p>
+        </div>
+      </li>
+        `
+    }
+    document.querySelector(".has-scrollbar").innerHTML = doctorBox;
+}
+getDoctorGallary();
 
 
