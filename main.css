@@ -824,6 +824,26 @@ option {
 .whatapp i {
   font-size: 35px;
 }
+.phoneFloat {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(50, 50, 50, 0.3);
+  font-size: 22px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: var(--oxford-blue-1);
+  transition: var(--transition);
+}
+.phoneFloat i {
+  font-size: 35px;
+}
 .reservation-bottom {
   width: 100%;
 }
@@ -936,6 +956,10 @@ option {
   .whatapp {
     bottom: 70px;
     right: 30px;
+  }
+  .phoneFloat {
+    bottom: 70px;
+    left: 30px;
   }
 }
 
