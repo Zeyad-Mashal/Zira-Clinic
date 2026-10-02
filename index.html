@@ -1,1041 +1,574 @@
 <!DOCTYPE html>
 <html dir="rtl">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zira Clinic</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="smile.css" />
+    <link rel="stylesheet" href="site.css" />
     <link rel="stylesheet" href="lightbox.css" />
     <link rel="shortcut icon" href="./favicon" type="image/svg+xml" />
-    <link rel="icon" href="./images/logo.png" />
-    <!-- Google Fonnts -->
+    <link rel="icon" href="./images/logo.png" /> <!-- Google Fonnts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FontAwsome -->
-    <script
-      src="https://kit.fontawesome.com/9efa984a6f.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Header -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap"
+        rel="stylesheet" /> <!-- FontAwsome -->
+    <script src="https://kit.fontawesome.com/9efa984a6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body> <!-- Header -->
     <header class="header">
-      <div class="header-top">
-        <div class="container">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <i class="fa-regular fa-envelope" style="color: white"></i>
-
-              <a href="mailto:info@example.com" class="contact-link"
-                >zira-clinic@zira.com</a
-              >
-            </li>
-
-            <li class="contact-item">
-              <i class="fa-solid fa-phone" style="color: white"></i>
-
-              <a href="tel:+966590333666" class="contact-link">0590333666</a>
-            </li>
-          </ul>
-
-          <ul class="social-list">
-            <li>
-              <a href="https://www.facebook.com/profile.php?id=61554888898429&mibextid=ZbWKwL" class="social-link">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.snapchat.com/add/zira_clinic?share_id=il4ChmKlFLU&locale=ar-AE" class="social-link">
-                <i class="fa-brands fa-snapchat"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@zira_clinic?_t=8i89bCm7tjt&_r=1" class="social-link">
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/zira_clinic?igsh=MXF3aTVqeXNjMnB0Ng==" class="social-link">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://twitter.com/Zira_clinic" class="social-link">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://wa.me/966590333666" class="social-link">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </li>
-          </ul>
+        <div class="header-top">
+            <div class="container">
+                <ul class="contact-list">
+                    <li class="contact-item"> <i class="fa-regular fa-envelope" style="color: white"></i> <a
+                            href="mailto:info@example.com" class="contact-link">zira-clinic@zira.com</a> </li>
+                    <li class="contact-item"> <i class="fa-solid fa-phone" style="color: white"></i> <a
+                            href="tel:+966590333666" class="contact-link">0590333666</a> </li>
+                </ul>
+                <ul class="social-list">
+                    <li> <a href="https://www.facebook.com/profile.php?id=61554888898429&mibextid=ZbWKwL"
+                            class="social-link"> <i class="fa-brands fa-facebook"></i> </a> </li>
+                    <li> <a href="https://www.snapchat.com/add/zira_clinic?share_id=il4ChmKlFLU&locale=ar-AE"
+                            class="social-link"> <i class="fa-brands fa-snapchat"></i> </a> </li>
+                    <li> <a href="https://www.tiktok.com/@zira_clinic?_t=8i89bCm7tjt&_r=1" class="social-link"> <i
+                                class="fa-brands fa-tiktok"></i> </a> </li>
+                    <li> <a href="https://www.instagram.com/zira_clinic?igsh=MXF3aTVqeXNjMnB0Ng==" class="social-link">
+                            <i class="fa-brands fa-instagram"></i> </a> </li>
+                    <li> <a href="https://twitter.com/Zira_clinic" class="social-link"> <i
+                                class="fa-brands fa-x-twitter"></i> </a> </li>
+                    <li> <a href="https://wa.me/966590333666" class="social-link"> <i class="fa-brands fa-whatsapp"></i>
+                        </a> </li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-      <div class="header-bottom" data-header>
-        <div class="container">
-          <a href="#" class="logo">
-            <img
-              src="./images/logo.png"
-              alt="logo"
-              height="100px"
-              width="100px"
-              loading="lazy"
-            />
-          </a>
-
-          <div class="mobile-lang">
-            <i class="fa-solid fa-earth-americas"></i>
-            <p id="optionAr" class="d-none" data-i18n="optionAr">العربية</p>
-            <p id="optionEn" class="d-flex" data-i18n="optionEn">الانجليزية</p>
-          </div>
-
-          <nav class="navbar container" data-navbar>
-            <ul class="navbar-list">
-              <li>
-                <a
-                  href="#home"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="home"
-                  >الرئيسية
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#service"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="service"
-                  >خدماتنا</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="about"
-                  >من نحن ؟</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="blog"
-                  >أسالتكم</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#reservation"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="contact"
-                  >اتصل بنا</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#gallary"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="gallary"
-                  >معرض الصور</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#rates"
-                  class="navbar-link"
-                  data-navbar-link
-                  data-i18n="rates"
-                  >اراء العملاء</a
-                >
-              </li>
-            </ul>
-          </nav>
-
-          <a href="#reservation" class="btn" data-i18n="reservationBtn"
-            >احجز معانا الان</a
-          >
-
-          <button
-            class="nav-toggle-btn"
-            aria-label="Toggle menu"
-            data-nav-toggler
-          >
-            <i class="fa-solid fa-bars menu-icon" aria-hidden="true"> </i>
-            <i class="fa-solid fa-xmark close-icon" aria-hidden="true"></i>
-          </button>
+        <div class="header-bottom" data-header>
+            <div class="container"> <a href="#" class="logo"> <img src="./images/logo.png" alt="logo" height="100px"
+                        width="100px" loading="lazy" /> </a>
+                <div class="mobile-lang"> <i class="fa-solid fa-earth-americas"></i>
+                    <p id="optionAr" class="d-none" data-i18n="optionAr">العربية</p>
+                    <p id="optionEn" class="d-flex" data-i18n="optionEn">الانجليزية</p>
+                </div>
+                <nav class="navbar container" data-navbar>
+                    <ul class="navbar-list">
+                        <li> <a href="#home" class="navbar-link" data-navbar-link data-i18n="home">الرئيسية </a> </li>
+                        <li> <a href="#service" class="navbar-link" data-navbar-link data-i18n="service">خدماتنا</a>
+                        </li>
+                        <li> <a href="#about" class="navbar-link" data-navbar-link data-i18n="about">من نحن ؟</a> </li>
+                        <li> <a href="#blog" class="navbar-link" data-navbar-link data-i18n="blog">أسالتكم</a> </li>
+                        <li> <a href="#reservation" class="navbar-link" data-navbar-link data-i18n="contact">اتصل
+                                بنا</a> </li>
+                        <li> <a href="#gallary" class="navbar-link" data-navbar-link data-i18n="gallary">معرض الصور</a>
+                        </li>
+                        <li> <a href="#rates" class="navbar-link" data-navbar-link data-i18n="rates">اراء العملاء</a>
+                        </li>
+                    </ul>
+                </nav> <a href="#reservation" class="btn" data-i18n="reservationBtn">احجز معانا الان</a> <button
+                    class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler> <i
+                        class="fa-solid fa-bars menu-icon" aria-hidden="true"> </i> <i
+                        class="fa-solid fa-xmark close-icon" aria-hidden="true"></i> </button>
+            </div>
         </div>
-      </div>
-    </header>
-
-    <!-- Main -->
+    </header> <!-- Main -->
     <main>
-      <article>
-        <!-- Hero -->
-
-        <section
-          class="section hero"
-          id="home"
-          style="background-image: url('./images/hero-bg')"
-          aria-label="hero"
-        >
-          <div class="container">
-            <div class="hero-content">
-              <p class="section-subtitle color" data-i18n="heroSubtitle">
-                مرحبا بكم في عيادة زيرا
-              </p>
-              <h1 class="h1 hero-title" data-i18n="heroTitle">
-                بعيادة زيرا ابتسامك تعكس جمال وثقة
-              </h1>
-              <p class="hero-text" data-i18n="heroText">
-                في عيادات زيرا، نقدم باهتمام فائق خدمات الأسنان التجميلية والعلاجية، حيث يشرف
-                على هذه الخدمات فريق من الخبراء المتميزين. نحن ملتزمون بتوفير رعاية شاملة ومتكاملة
-                ، مع التركيز على جودة الخدمة وراحة المريض، لضمان تحقيق أفضل نتائج صحية وجمالية.
-              </p>
-
-              <form class="hero-form">
-                <input
-                  type="email"
-                  name="email_address"
-                  aria-label="email"
-                  placeholder="Get A Call back"
-                  required
-                  class="email-field"
-                />
-                <a type="submit" class="btn" data-i18n="heroCallBtn" href="#reservation">
-                  ارسل رسالة للتواصل معنا
-                </a>
-              </form>
-            </div>
-
-            <figure>
-              <img
-                src="./images/hero.png"
-                width="587"
-                height="939"
-                alt="Home Image"
-                class="w-100 hero-banner"
-                loading="lazy"
-              />
-            </figure>
-          </div>
-        </section>
-
-        <!-- service -->
-
-        <section class="section service" id="service" aria-label="service">
-          <div class="container">
-            <p
-              class="section-subtitle color text-center"
-              data-i18n="serviceSubtitle"
-            >
-              خدماتنا
-            </p>
-            <h2 class="h2 section-title text-center" data-i18n="serviceTitle">
-              ما هي خدماتنا ؟
-            </h2>
-
-            <ul class="service-list">
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i1png.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service1">
-                      زراعة الاسنان
-                    </h3>
-                    <p class="card-text" data-i18n="service1Text">
-                      زراعة الأسنان هي تقنية حديثة تستخدم لتثبيت أسنان اصطناعية
-                      بشكل دائم. يتم زرع جذور صناعية في الفك لحلاً فعّالاً
-                      لفقدان الأسنان، مما يضمن استعادة الوظيفة والمظهر الطبيعي.
-                    </p>
-                  </div>
+        <article> <!-- Hero -->
+            <section class="section hero" id="home" aria-label="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="section-subtitle color" data-i18n="heroSubtitle"> مرحبا بكم في عيادة زيرا </p>
+                        <h1 class="h1 hero-title" data-i18n="heroTitle"> بعيادة زيرا ابتسامك تعكس جمال وثقة </h1>
+                        <p class="hero-text" data-i18n="heroText"> في عيادات زيرا، نقدم باهتمام فائق خدمات الأسنان
+                            التجميلية والعلاجية، حيث يشرف على هذه الخدمات فريق من الخبراء المتميزين. نحن ملتزمون بتوفير
+                            رعاية شاملة ومتكاملة ، مع التركيز على جودة الخدمة وراحة المريض، لضمان تحقيق أفضل نتائج صحية
+                            وجمالية. </p>
+                        <form class="hero-form"> <input type="email" name="email_address" aria-label="email"
+                                placeholder="Get A Call back" required class="email-field" /> <a type="submit"
+                                class="btn" data-i18n="heroCallBtn" href="#reservation"> ارسل رسالة للتواصل معنا </a>
+                        </form>
+                    </div>
+                    <figure> <img src="./images/service-banner.png" width="587" height="939" alt="Home Image"
+                            class="w-100 hero-banner" loading="lazy" /> </figure>
                 </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i7.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service2">
-                      تبييض الأسنان
-                    </h3>
-                    <p class="card-text" data-i18n="service2Text">
-                      تفتيح لون الأسنان وإزالة البقع والتصبغات باستخدام الليزر
-                      وأحدث التقنيات للوصول لدرجة البياض المناسبة لكل حالة
-                    </p>
-                  </div>
+            </section> <!-- service -->
+            <section class="section service" id="service" aria-label="service">
+                <div class="container">
+                    <p class="section-subtitle color text-center" data-i18n="serviceSubtitle"> خدماتنا </p>
+                    <h2 class="h2 section-title text-center" data-i18n="serviceTitle"> ما هي خدماتنا ؟ </h2>
+                    <ul class="service-list">
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/i1png.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service1"> زراعة الاسنان </h3>
+                                    <p class="card-text" data-i18n="service1Text"> زراعة الأسنان هي تقنية حديثة تستخدم
+                                        لتثبيت أسنان اصطناعية بشكل دائم. يتم زرع جذور صناعية في الفك لحلاً فعّالاً
+                                        لفقدان الأسنان، مما يضمن استعادة الوظيفة والمظهر الطبيعي. </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/whigtingTeeth.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service2"> تبييض الأسنان </h3>
+                                    <p class="card-text" data-i18n="service2Text"> تفتيح لون الأسنان وإزالة البقع
+                                        والتصبغات باستخدام الليزر وأحدث التقنيات للوصول لدرجة البياض المناسبة لكل حالة
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/i2.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service3"> تقويم الاسنان </h3>
+                                    <p class="card-text" data-i18n="service3Text"> تشخيص ومعالجة عيوب إطباق الأسنان
+                                        وإرتصاصها وتناغم الفكين والوجه والتخلص من التزاحم والفراغات للحصول على أسنان
+                                        متناسقة على استقامة واحدة </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="service-banner">
+                            <figure> <img src="./images/service-banner.png" width="489" height="467" loading="lazy"
+                                    alt="service banner" class="w-100" /> </figure>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/i8.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service4"> علاج العصب وخلع الأسنان الجراحي
+                                    </h3>
+                                    <p class="card-text" data-i18n="service4Text"> تشخيص وعلاج عصب الأسنان وغالبا يكون
+                                        ذلك بإزالة العصب المصاب وحشو التجويف العصبي بمواد خاصة للمحافظة على الأسنان
+                                        وإصلاح الأسطح المصابة فيها </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/i9.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service5"> حشوات الأسنان التجميلية </h3>
+                                    <p class="card-text" data-i18n="service5Text"> يقوم الطبيب بتنظيف الأسنان وإزالة
+                                        التسوس وتنفيذ حشوات تجميلية تكميلية وترميم السن للحفاظ على وظائفه التجميلية
+                                        والغذائية </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="service-card">
+                                <div class="card-icon"> <img src="./images/i3.png" width="100" height="100"
+                                        loading="lazy" alt="service icon" class="w-100" /> </div>
+                                <div>
+                                    <h3 class="h3 card-title" data-i18n="service6"> تركيبات الأسنان </h3>
+                                    <p class="card-text" data-i18n="service6Text"> استخدام مواد معينة لإصلاح الأسنان
+                                        المتضررة من التسوس واسترجاع مظهرها ووظيفتها الطبيعية، حيث يقوم الطبيب بإزالة
+                                        الجزء المتضرر واستبداله بالتركيبة </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i2.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service3">
-                      تقويم الاسنان
-                    </h3>
-                    <p class="card-text" data-i18n="service3Text">
-                      تشخيص ومعالجة عيوب إطباق الأسنان وإرتصاصها وتناغم الفكين
-                      والوجه والتخلص من التزاحم والفراغات للحصول على أسنان
-                      متناسقة على استقامة واحدة
-                    </p>
-                  </div>
+            </section> <!-- About -->
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+                    <figure class="about-banner"> <img src="./images/i4.jpg" width="470" height="538" loading="lazy"
+                            alt="about banner" class="w-100" /> </figure>
+                    <div class="about-content">
+                        <p class="section-subtitle color" data-i18n="aboutSubtitle"> من نحن ؟ </p>
+                        <h2 class="h2 section-title" data-i18n="aboutTitle"> نحن نهتم بصحة أسنانك </h2>
+                        <p class="section-text section-text-1" data-i18n="aboutText"> نحن نفخر بتقديم رعاية طبية عالية
+                            الجودة وخدمات طب الأسنان المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون دائمًا
+                            لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا تبييض الأسنان، علاجات التجميل،
+                            زراعة الأسنان، علاجات تقويم الأسنان، والعديد من الخدمات الأخرى التي تلبي احتياجاتك الصحية
+                            والجمالية. نحرص على استخدام أحدث التقنيات والمعدات لتقديم الرعاية المثالية </p> <a
+                            href="#reservation" class="btn" data-i18n="aboutBtn"> اتصل بنا الآن </a>
+                    </div>
                 </div>
-              </li>
-              <li class="service-banner">
-                <figure>
-                  <img
-                    src="./images/service-banner.png"
-                    width="489"
-                    height="467"
-                    loading="lazy"
-                    alt="service banner"
-                    class="w-100"
-                  />
-                </figure>
-              </li>
-
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i8.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service4">
-                      علاج العصب وخلع الأسنان الجراحي
-                    </h3>
-                    <p class="card-text" data-i18n="service4Text">
-                      تشخيص وعلاج عصب الأسنان وغالبا يكون ذلك بإزالة العصب
-                      المصاب وحشو التجويف العصبي بمواد خاصة للمحافظة على الأسنان
-                      وإصلاح الأسطح المصابة فيها
-                    </p>
-                  </div>
+            </section> <!-- Doctor -->
+            <section class="section doctor" id="doctor" aria-label="doctor">
+                <div class="container">
+                    <p class="section-subtitle color text-center" data-i18n="doctorSubtitle"> اطبائنا </p>
+                    <h2 class="h2 section-title text-center" data-i18n="doctorTitle"> أفضل اطباء خبراء في طب الاسنان
+                    </h2>
+                    <ul class="has-scrollbar"> <!-- Data li came from js fetch --> </ul>
                 </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i9.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service5">
-                      حشوات الأسنان التجميلية
-                    </h3>
-                    <p class="card-text" data-i18n="service5Text">
-                      يقوم الطبيب بتنظيف الأسنان وإزالة التسوس وتنفيذ حشوات
-                      تجميلية تكميلية وترميم السن للحفاظ على وظائفه التجميلية
-                      والغذائية
-                    </p>
-                  </div>
+            </section> <!-- CTA -->
+            <section class="section cta" aria-label="cta">
+                <div class="container">
+                    <figure class="cta-banner"> <img src="./images/drdalia.png" width="1056" height="1076"
+                            loading="lazy" alt="cta banner" class="w-100" /> </figure>
+                    <div class="cta-content">
+                        <p class="section-subtitle color" data-i18n="ctaSubtitle"> أحجز معنا الان </p>
+                        <h2 class="h2 section-title" data-i18n="ctaTitle"> نرحب دائما بكم و دائما في عيادة زيرا للأسنان
+                        </h2> <a href="#reservation" class="btn" data-i18n="ctaBtn"> أحجز خدمتك معنا الان </a>
+                    </div>
                 </div>
-              </li>
-              <li>
-                <div class="service-card">
-                  <div class="card-icon">
-                    <img
-                      src="./images/i3.png"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="service icon"
-                      class="w-100"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title" data-i18n="service6">
-                      تركيبات الأسنان
-                    </h3>
-                    <p class="card-text" data-i18n="service6Text">
-                      استخدام مواد معينة لإصلاح الأسنان المتضررة من التسوس
-                      واسترجاع مظهرها ووظيفتها الطبيعية، حيث يقوم الطبيب بإزالة
-                      الجزء المتضرر واستبداله بالتركيبة
-                    </p>
-                  </div>
+            </section> <!-- Blog -->
+            <section class="section blog" id="blog" aria-label="blog">
+                <div class="container">
+                    <p class="section-subtittle text-center" data-i18n="blogSubtitle"> اسألتكم المشهورة </p>
+                    <h2 class="h2 section-subtittle text-center" data-i18n="blogTitle"> ما هي أشهر الاسالة ؟ </h2>
+                    <ul class="blog-list">
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800"> <img
+                                        src="./images/blog-1.jpg" width="1180" height="800" alt="Blog banner"
+                                        class="image-cover" /> </figure>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <p class="card-title" data-i18n="blogQ1"> متى يلزم تقويم الأسنان؟ </p>
+                                    </h3>
+                                    <p class="card-text" data-i18n="blogAns1"> في حال وجود مشكلة في النطق أو الأكل وجود
+                                        مشكلة في إطباق الأسنان وجود فراغات أو تزاحم بين الأسنان </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800"> <img
+                                        src="./images/blog-2.jpg" width="1180" height="800" alt="Blog banner"
+                                        class="image-cover" /> </figure>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <p class="card-title" data-i18n="blogQ2"> هل يمكن علاج عصب الأسنان بجلسة واحدة؟
+                                        </p>
+                                    </h3>
+                                    <p class="card-text" data-i18n="blogAns2"> يمكن علاج عصب الأسنان بجلسة واحدة إلا إذا
+                                        كانت الحالة تعاني من وجود صديد أو مضاعفات تؤخر عملية العلاج </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder" style="--width: 1180; --height: 800"> <img
+                                        src="./images/blog-3.jpg" width="1180" height="800" alt="Blog banner"
+                                        class="image-cover" /> </figure>
+                                <div class="card-content">
+                                    <h3 class="h3">
+                                        <p class="card-title" data-i18n="blogQ3"> هل الفينير يسبب رائحة أسنان كريهة؟
+                                        </p>
+                                    </h3>
+                                    <p class="card-text" data-i18n="blogAns3"> ظهور مشكلة رائحة الأسنان مع الفينير لها
+                                        عدة عوامل حيث إنها تعتمد على خبرة الطبيب وجودة المواد المستخدمة ونظافة الأسنان
+                                        الدورية عن طريق استخدام الخيط والتفريش والمراجعة الدورية </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- About -->
-
-        <section class="section about" id="about" aria-label="about">
-          <div class="container">
-            <figure class="about-banner">
-              <img
-                src="./images/i4.png"
-                width="470"
-                height="538"
-                loading="lazy"
-                alt="about banner"
-                class="w-100"
-              />
-            </figure>
-
-            <div class="about-content">
-              <p class="section-subtitle color" data-i18n="aboutSubtitle">
-                من نحن ؟
-              </p>
-              <h2 class="h2 section-title" data-i18n="aboutTitle">
-                نحن نهتم بصحة أسنانك
-              </h2>
-              <p class="section-text section-text-1" data-i18n="aboutText">
-                نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب الأسنان
-                المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون
-                دائمًا لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا
-                تبييض الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم
-                الأسنان، والعديد من الخدمات الأخرى التي تلبي
-                احتياجاتك الصحية والجمالية. نحرص على استخدام أحدث التقنيات
-                والمعدات لتقديم الرعاية المثالية
-              </p>
-              <a href="#reservation" class="btn" data-i18n="aboutBtn">
-                اتصل بنا الآن
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Doctor -->
-        <section class="section doctor" id="doctor" aria-label="doctor">
-          <div class="container">
-            <p
-              class="section-subtitle color text-center"
-              data-i18n="doctorSubtitle"
-            >
-              اطبائنا
-            </p>
-            <h2 class="h2 section-title text-center" data-i18n="doctorTitle">
-              أفضل اطباء خبراء في طب الاسنان
-            </h2>
-            <ul class="has-scrollbar">
-              <!-- Data li came from js fetch -->
-            </ul>
-          </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="section cta" aria-label="cta">
-          <div class="container">
-            <figure class="cta-banner">
-              <img
-                src="./images/cta-banner2.png"
-                width="1056"
-                height="1076"
-                loading="lazy"
-                alt="cta banner"
-                class="w-100"
-              />
-            </figure>
-            <div class="cta-content">
-              <p class="section-subtitle color" data-i18n="ctaSubtitle">
-                أحجز معنا الان
-              </p>
-              <h2 class="h2 section-title" data-i18n="ctaTitle">
-                نرحب دائما بكم و دائما في عيادة زيرا للأسنان
-              </h2>
-              <a href="#reservation" class="btn" data-i18n="ctaBtn">
-                أحجز خدمتك معنا الان
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Blog -->
-        <section class="section blog" id="blog" aria-label="blog">
-          <div class="container">
-            <p class="section-subtittle text-center" data-i18n="blogSubtitle">
-              اسألتكم المشهورة
-            </p>
-            <h2 class="h2 section-subtittle text-center" data-i18n="blogTitle">
-              ما هي أشهر الاسالة ؟
-            </h2>
-
-            <ul class="blog-list">
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 1180; --height: 800"
-                  >
-                    <img
-                      src="./images/blog-1.jpg"
-                      width="1180"
-                      height="800"
-                      alt="Blog banner"
-                      class="image-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h3">
-                      <p class="card-title" data-i18n="blogQ1">
-                        متى يلزم تقويم الأسنان؟
-                      </p>
-                    </h3>
-                    <p class="card-text" data-i18n="blogAns1">
-                      في حال وجود مشكلة في النطق أو الأكل وجود مشكلة في إطباق
-                      الأسنان وجود فراغات أو تزاحم بين الأسنان
-                    </p>
-                  </div>
+            </section> <!-- Contact -->
+            <section class="section contact" id="reservation" aria-label="contact">
+                <div class="container">
+                    <div class="reservation-card">
+                        <p class="section-subtittle text-center" data-i18n="contactSubtitle"> تواصل معنا هنا </p>
+                        <h2 class="h2 section-subtittle text-center" data-i18n="contactTitle"> أحجز معنا الان </h2>
+                        <div class="reservation-content">
+                            <p class="erroMessage"></p>
+                            <form>
+                                <div> <label for="firstname" data-i18n="fristName"> الاسم الاول </label> <input
+                                        type="text" id="firstname" required /> </div>
+                                <div> <label for="lastname" data-i18n="lastName"> اسم العائلة </label> <input
+                                        type="text" id="lastname" required /> </div>
+                                <div> <label for="phone" data-i18n="phoneNumber"> رقم الهاتف </label> <input
+                                        type="number" id="phone" required /> </div>
+                                <div> <label for="date" data-i18n="date"> اختر تاريخ الحجز </label> <input type="date"
+                                        id="date" required /> </div>
+                                <div class="selectBox">
+                                    <p class="select-title" data-i18n="servicesSelector"> اختر العرض او الخدمة </p>
+                                    <select name="services" class="options" id="select"> <!-- get option tag from js -->
+                                    </select>
+                                </div>
+                                <div class="textarea">
+                                    <p data-i18n="textarea"> اترك لنا رسالتك و سوف يتم التواصل معاك </p> <textarea
+                                        id="textArea"></textarea>
+                                </div>
+                            </form>
+                            <div class="text-center"> <button class="btn" data-i18n="sendBtn"
+                                    id="sendBtn">ارسال</button> </div>
+                        </div>
+                    </div>
                 </div>
-              </li>
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 1180; --height: 800"
-                  >
-                    <img
-                      src="./images/blog-2.jpg"
-                      width="1180"
-                      height="800"
-                      alt="Blog banner"
-                      class="image-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h3">
-                      <p class="card-title" data-i18n="blogQ2">
-                        هل يمكن علاج عصب الأسنان بجلسة واحدة؟
-                      </p>
-                    </h3>
-                    <p class="card-text" data-i18n="blogAns2">
-                      يمكن علاج عصب الأسنان بجلسة واحدة إلا إذا كانت الحالة
-                      تعاني من وجود صديد أو مضاعفات تؤخر عملية العلاج
-                    </p>
-                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 1180; --height: 800"
-                  >
-                    <img
-                      src="./images/blog-3.jpg"
-                      width="1180"
-                      height="800"
-                      alt="Blog banner"
-                      class="image-cover"
-                    />
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h3">
-                      <p class="card-title" data-i18n="blogQ3">
-                        هل الفينير يسبب رائحة أسنان كريهة؟
-                      </p>
-                    </h3>
-                    <p class="card-text" data-i18n="blogAns3">
-                      ظهور مشكلة رائحة الأسنان مع الفينير لها عدة عوامل حيث إنها
-                      تعتمد على خبرة الطبيب وجودة المواد المستخدمة ونظافة
-                      الأسنان الدورية عن طريق استخدام الخيط والتفريش والمراجعة
-                      الدورية
-                    </p>
-                  </div>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Contact -->
-        <section class="section contact" id="reservation" aria-label="contact">
-          <div class="container">
-            <div class="reservation-card">
-              <p
-                class="section-subtittle text-center"
-                data-i18n="contactSubtitle"
-              >
-                تواصل معنا هنا
-              </p>
-              <h2
-                class="h2 section-subtittle text-center"
-                data-i18n="contactTitle"
-              >
-                أحجز معنا الان
-              </h2>
-              <div class="reservation-content">
-                <p class="erroMessage"></p>
-                <form>
-                  <div>
-                    <label for="firstname" data-i18n="fristName">
-                      الاسم الاول
-                    </label>
-                    <input type="text" id="firstname" required />
-                  </div>
-                  <div>
-                    <label for="lastname" data-i18n="lastName">
-                      اسم العائلة
-                    </label>
-                    <input type="text" id="lastname" required />
-                  </div>
-                  <div>
-                    <label for="phone" data-i18n="phoneNumber">
-                      رقم الهاتف
-                    </label>
-                    <input type="number" id="phone" required />
-                  </div>
-                  <div>
-                    <label for="date" data-i18n="date">
-                      اختر تاريخ الحجز
-                    </label>
-                    <input type="date" id="date" required />
-                  </div>
-                
-                <div class="selectBox">
-                    <p class="select-title" data-i18n="servicesSelector">
-                      اختر العرض او الخدمة
-                    </p>
-                    <select name="services" class="options" id="select">
-                      <!-- get option tag from js -->
-                    </select>
-                  </div>
-                  <div class="textarea">
-                    <p data-i18n="textarea">
-                      اترك لنا رسالتك و سوف يتم التواصل معاك
-                    </p>
-                    <textarea id="textArea"></textarea>
-                  </div>
-                </form>
-                <div class="text-center">
-                  <button class="btn" data-i18n="sendBtn" id="sendBtn">ارسال</button>
+                <div class="contactPopup d-none">
+                    <div class="popupContent"> </div>
                 </div>
-                  </div>
+            </section> <!-- Gallery 1 -->
+            <section class="section gallary smile-studio" id="gallary">
+                <div class="container">
+                    <header class="smile-head">
+                        <p class="smile-eyebrow"><span data-i18n="gallarySubtitle">قبل وبعد</span></p>
+                        <h2 class="smile-title" data-i18n="gallaryTitle">معرض الابتسامات</h2>
+                        <p class="smile-note" data-i18n="smileNote">لمحة هادئة عن العلاجات التي يطلبها المرضى أكثر</p>
+                    </header>
+                    <div class="smile-cases">
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-whitening.jpg" data-lightbox="smiles"
+                                data-title="تبييض الأسنان">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-whitening.jpg" width="960" height="540"
+                                        loading="lazy" alt="تبييض الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">01</span>
+                                    <h3 data-i18n="caseWhitening">تبييض الأسنان</h3>
+                                    <p data-i18n="caseWhiteningText">تفتيح التصبغات واصفرار القهوة لدرجة بياض طبيعية
+                                        تناسب الوجه.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-veneers.jpg" data-lightbox="smiles"
+                                data-title="فينير وابتسامة هوليود">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-veneers.jpg" width="960" height="540" loading="lazy"
+                                        alt="فينير الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">02</span>
+                                    <h3 data-i18n="caseVeneers">فينير وابتسامة هوليود</h3>
+                                    <p data-i18n="caseVeneersText">قشور خزفية توحّد اللون والطول وترسم خط ابتسامة
+                                        متناسق.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-ortho.jpg" data-lightbox="smiles" data-title="تقويم الأسنان">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-ortho.jpg" width="960" height="540" loading="lazy"
+                                        alt="تقويم الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">03</span>
+                                    <h3 data-i18n="caseOrtho">تقويم الأسنان</h3>
+                                    <p data-i18n="caseOrthoText">ترتيب الأسنان المتزاحمة على استقامة واحدة بدون فراغات.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-implant.jpg" data-lightbox="smiles"
+                                data-title="زراعة الأسنان">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-implant.jpg" width="960" height="540" loading="lazy"
+                                        alt="زراعة الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">04</span>
+                                    <h3 data-i18n="caseImplant">زراعة الأسنان</h3>
+                                    <p data-i18n="caseImplantText">تعويض السن المفقود بزراعة ثابتة بلون الأسنان المجاورة.
+                                    </p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-gap.jpg" data-lightbox="smiles" data-title="إغلاق الفراغات">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-gap.jpg" width="960" height="540" loading="lazy"
+                                        alt="إغلاق فراغ الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">05</span>
+                                    <h3 data-i18n="caseGap">إغلاق الفراغات</h3>
+                                    <p data-i18n="caseGapText">سد الفراغ بين الأسنان الأمامية بحشوة تجميلية طبيعية.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="smile-case">
+                            <a href="./images/smiles/smile-crowns.jpg" data-lightbox="smiles"
+                                data-title="تركيبات تجميلية">
+                                <div class="ba-frame">
+                                    <img src="./images/smiles/smile-crowns.jpg" width="960" height="540" loading="lazy"
+                                        alt="تركيبات الأسنان قبل وبعد" />
+                                    <span class="ba-seal" aria-hidden="true"></span>
+                                    <span class="ba-tag ba-before" data-i18n="beforeLabel">قبل</span>
+                                    <span class="ba-tag ba-after" data-i18n="afterLabel">بعد</span>
+                                </div>
+                                <div class="smile-case-body">
+                                    <span class="smile-index">06</span>
+                                    <h3 data-i18n="caseCrowns">تركيبات تجميلية</h3>
+                                    <p data-i18n="caseCrownsText">استعادة طول الأسنان المتآكلة بتيجان قريبة من شكل السن
+                                        الطبيعي.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="smile-cta">
+                        <p data-i18n="smileCta">الابتسامة التالية تبدأ من استشارة واحدة.</p>
+                        <a href="#reservation" class="btn smile-cta-btn" data-i18n="smileCtaBtn">احجز استشارتك</a>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="contactPopup d-none">
-            <div class="popupContent">
-             
-              </div>
-          </div>
-        </section>
-
-        <!-- Gallery 1 -->
-        <section class="section gallary" id="gallary">
-          <div class="container">
-            <p
-              class="section-subtittle text-center"
-              data-i18n="gallarySubtitle"
-            >
-              بعض من ابتسامتنا
-            </p>
-            <h2
-              class="h2 section-subtittle text-center"
-              data-i18n="gallaryTitle"
-            >
-              معرض الابتسامات
-            </h2>
-
-            <div class="gallary-container">
-              <!-- gallary came from js -->
-            </div>
-          </div>
-        </section>
-
-        <!-- Gallery 2 -->
-        <section class="section gallary" id="gallary">
-          <div class="container">
-            <p
-              class="section-subtittle text-center"
-              data-i18n="gallary2Subtitle"
-            >
-              عيادة زيرا للاسنان
-            </p>
-            <h2
-              class="h2 section-subtittle text-center"
-              data-i18n="gallary2Title"
-            >
-              جولة في العيادة
-            </h2>
-
-            <div class="gallary-container clinic-gallary">
-              <!-- gallary came from the js -->
-            </div>
-          </div>
-        </section>
-
-        <!-- Rates -->
-        <section class="section rate" id="rates" aria-label="rate">
-          <div class="container">
-            <p class="section-subtittle text-center" data-i18n="rateSubtitle">
-              ماذا يقول العملاء عن عنا ؟
-            </p>
-            <h2 class="h2 section-subtittle text-center" data-i18n="rateTitle">
-              أراء العملاء
-            </h2>
-            <ul class="has-scrollbar">
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 100%; --height: 190"
-                  >
-                    <img
-                      src="./images/rate1png.png"
-                      width="500"
-                      height="190"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
+            </section> <!-- Rates -->
+            <section class="section rate" id="rates" aria-label="rate">
+                <div class="container">
+                    <p class="section-subtittle text-center" data-i18n="rateSubtitle"> ماذا يقول العملاء عن عنا ؟ </p>
+                    <h2 class="h2 section-subtittle text-center" data-i18n="rateTitle"> أراء العملاء </h2>
+                    <ul class="has-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 100%; --height: 190"> <img
+                                        src="./images/rate1png.png" width="500" height="190" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: 190"> <img
+                                        src="./images/rate2.png" width="480" height="190" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: 300"> <img
+                                        src="./images/rate3.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: "> <img
+                                        src="./images/rate4.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: "> <img
+                                        src="./images/rate5.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: "> <img
+                                        src="./images/rate6.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: "> <img
+                                        src="./images/rate7.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="doctor-card">
+                                <div class="card-banner img-holder" style="--width: 460; --height: "> <img
+                                        src="./images/rate8.png" width="460" height="300" loading="lazy"
+                                        alt="Doctor Image" class="image-cover" /> </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: 190"
-                  >
-                    <img
-                      src="./images/rate2.png"
-                      width="480"
-                      height="190"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: 300"
-                  >
-                    <img
-                      src="./images/rate3.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: "
-                  >
-                    <img
-                      src="./images/rate4.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: "
-                  >
-                    <img
-                      src="./images/rate5.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: "
-                  >
-                    <img
-                      src="./images/rate6.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: "
-                  >
-                    <img
-                      src="./images/rate7.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li class="scrollbar-item">
-                <div class="doctor-card">
-                  <div
-                    class="card-banner img-holder"
-                    style="--width: 460; --height: "
-                  >
-                    <img
-                      src="./images/rate8.png"
-                      width="460"
-                      height="300"
-                      loading="lazy"
-                      alt="Doctor Image"
-                      class="image-cover"
-                    />
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </article>
-    </main>
-
-    <!-- Footer -->
+            </section>
+        </article>
+    </main> <!-- Footer -->
     <footer class="footer">
-      <div class="footer-top section">
-        <div class="container">
-          <div class="footer-brand">
-            <img
-              src="./images/logo.png"
-              alt="logo"
-              width="100px"
-              height="10px"
-            />
-            <p class="footer-text" data-i18n="footerText">
-              نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب الأسنان
-              المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون دائمًا
-              لتحقيق أفضل النتائج وضمان راحة وثقة مرضانا. تشمل خدماتنا تبييض
-              الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم الأسنان،
-              زراعة الأسنان والعديد من الخدمات الأخرى التي تلبي احتياجاتك الصحية
-              والجمالية. نحرص على استخدام أحدث التقنيات والمعدات لتقديم الرعاية
-              المثالية
-            </p>
-            <div class="schedule">
-              <div class="schedule-icon">
-                <i class="fa-regular fa-calendar-days"></i>
-              </div>
-              <span class="span" data-i18n="footerTime">
-                من السبت الي الخميس الساعة 2 الي 10 مساءً و الجمعة من 4 الي 10
-                مساءً
-              </span>
-            </div>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title" data-i18n="otherlinks">روابط اخرى</p>
-            </li>
-            <li>
-              <a href="#home" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="home">الرئيسية</span>
-              </a>
-            </li>
-            <li>
-              <a href="#about" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="about">من نحن ؟</span>
-              </a>
-            </li>
-            <li>
-              <a href="#service" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="service">خدماتنا</span>
-              </a>
-            </li>
-            <li>
-              <a href="#blog" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="blog">اشهر الاسالة</span>
-              </a>
-            </li>
-            <li>
-              <a href="#reservation" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="contact">تواصل معنا</span>
-              </a>
-            </li>
-            <li>
-              <a href="#gallary" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="gallary">معرض الصور</span>
-              </a>
-            </li>
-            <li>
-              <a href="#rates" class="footer-link">
-                <!-- icon -->
-                <i class="fa-solid fa-plus"></i>
-                <span class="span" data-i18n="rates">اراء العملاء</span>
-              </a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-list-title" data-i18n="contact">اتصل بنا</p>
-            </li>
-
-            <li class="footer-item">
-              <div class="item-icon">
-                <div>
-                  <i class="fa-solid fa-location-dot"></i>
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand"> <img src="./images/logo.png" alt="logo" width="100px" height="10px" />
+                    <p class="footer-text" data-i18n="footerText"> نحن نفخر بتقديم رعاية طبية عالية الجودة وخدمات طب
+                        الأسنان المتخصصة. يضم فريقنا ذو الخبرة العالية أطباء متخصصين يسعون دائمًا لتحقيق أفضل النتائج
+                        وضمان راحة وثقة مرضانا. تشمل خدماتنا تبييض الأسنان، علاجات التجميل، زراعة الأسنان، علاجات تقويم
+                        الأسنان، زراعة الأسنان والعديد من الخدمات الأخرى التي تلبي احتياجاتك الصحية والجمالية. نحرص على
+                        استخدام أحدث التقنيات والمعدات لتقديم الرعاية المثالية </p>
+                    <div class="schedule">
+                        <div class="schedule-icon"> <i class="fa-regular fa-calendar-days"></i> </div> <span
+                            class="span" data-i18n="footerTime"> من السبت الي الخميس الساعة 2 الي 10 مساءً و الجمعة من 4
+                            الي 10 مساءً </span>
+                    </div>
                 </div>
-              </div>
-              <address class="item-text">
-                <a
-                  href="https://maps.app.goo.gl/dW1CQjVDxBLXheSEA
-                "
-                  target="_blank"
-                  data-i18n="location"
-                  >اضغط للذهاب الي موقعنا</a
-                >
-              </address>
-            </li>
-
-            <li class="footer-item">
-              <div class="item-icon">
-                <i class="fa-solid fa-phone"></i>
-              </div>
-              <p class="call" data-i18n="call">ارقامنا هنا</p>
-              <a href="tel:+966590333666">0590333666</a>
-              |
-              <a href="tel:+966593500599">0593500599</a>
-            </li>
-          </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title" data-i18n="otherlinks">روابط اخرى</p>
+                    </li>
+                    <li> <a href="#home" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="home">الرئيسية</span> </a> </li>
+                    <li> <a href="#about" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="about">من نحن ؟</span> </a> </li>
+                    <li> <a href="#service" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="service">خدماتنا</span> </a> </li>
+                    <li> <a href="#blog" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="blog">اشهر الاسالة</span> </a> </li>
+                    <li> <a href="#reservation" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i>
+                            <span class="span" data-i18n="contact">تواصل معنا</span> </a> </li>
+                    <li> <a href="#gallary" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="gallary">معرض الصور</span> </a> </li>
+                    <li> <a href="#rates" class="footer-link"> <!-- icon --> <i class="fa-solid fa-plus"></i> <span
+                                class="span" data-i18n="rates">اراء العملاء</span> </a> </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title" data-i18n="contact">اتصل بنا</p>
+                    </li>
+                    <li class="footer-item">
+                        <div class="item-icon">
+                            <div> <i class="fa-solid fa-location-dot"></i> </div>
+                        </div>
+                        <address class="item-text"> <a href="https://maps.app.goo.gl/dW1CQjVDxBLXheSEA " target="_blank"
+                                data-i18n="location">اضغط للذهاب الي موقعنا</a> </address>
+                    </li>
+                    <li class="footer-item">
+                        <div class="item-icon"> <i class="fa-solid fa-phone"></i> </div>
+                        <p class="call" data-i18n="call">ارقامنا هنا</p> <a href="tel:+966590333666">0590333666</a> | <a
+                            href="tel:+966593500599">0593500599</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="container">
-          <p class="copyright" data-i18n="copyright">
-            كل الحقوق محفوظة | عيادة زيرا | شركة مومنتيوم
-          </p>
-
-          <ul class="social-list">
-            <li>
-              <a href="#" class="social-link">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <div class="insta">
-                <a href="#" class="social-link">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-            </li>
-            <li>
-              <a href="#" class="social-link">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright" data-i18n="copyright"> كل الحقوق محفوظة | عيادة زيرا | شركة مومنتيوم </p>
+                <ul class="social-list">
+                    <li> <a href="https://www.tiktok.com/@zira_clinic?_t=8i89bCm7tjt&_r=1" class="social-link"> <i
+                                class="fa-brands fa-tiktok"></i> </a>
+                    </li>
+                    <li>
+                        <div class="insta"> <a href="https://www.instagram.com/zira_clinic?igsh=MXF3aTVqeXNjMnB0Ng=="
+                                class="social-link"> <i class="fa-brands fa-instagram"></i> </a> </div>
+                    </li>
+                    <li> <a href="https://twitter.com/Zira_clinic" class="social-link"> <i
+                                class="fa-brands fa-x-twitter"></i> </a> </li>
+                    <li> <a href="https://www.snapchat.com/add/zira_clinic?share_id=il4ChmKlFLU&locale=ar-AE"
+                            class="social-link"> <i class="fa-brands fa-snapchat"></i> </a> </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </footer>
-
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/966590333666" class="whatapp" aria-label="whatsapp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- Phone Float -->
-    <a href="tel:+966590333666" class="phoneFloat" aria-label="Call">
-      <i class="fa-solid fa-phone"></i>
-    </a>
-
+    </footer> <!-- WhatsApp Float --> <a href="https://wa.me/966590333666" class="whatapp" aria-label="whatsapp"> <i
+            class="fa-brands fa-whatsapp"></i> </a> <!-- Phone Float --> <a href="tel:+966590333666"
+        class="phoneCallIcone" aria-label="Call Now"> <i class="fa-solid fa-phone"></i> </a>
     <script src="translation.js"></script>
     <script src="app.js"></script>
     <script src="lightbox-plus-jquery.js"></script>
-  </body>
+</body>
+
 </html>
